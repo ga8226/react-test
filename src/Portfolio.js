@@ -37,7 +37,7 @@ const Portfolio = () =>{
             <SwiperSlide><div className="vh-100 bg-1"style={{backgroundImage :"url(img/img1.jpg)"}}></div></SwiperSlide>
             <SwiperSlide><div className="vh-100 bg-2"style={{backgroundImage :"url(img/img2.jpg)"}}></div></SwiperSlide>
             <SwiperSlide><div className="vh-100 bg-3"style={{backgroundImage:"url(img/img3.jpg)"}}></div></SwiperSlide>
-            <SwiperSlide><div className="vh-100 bg-dark">4</div></SwiperSlide>
+            <SwiperSlide><div className="vh-100 bg-info">4</div></SwiperSlide>
             </Swiper>
     
              </div>
