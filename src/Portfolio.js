@@ -1,6 +1,8 @@
 import{Swiper,SwiperSlide} from'swiper/react';
 import { Autoplay,Pagination,Navigation } from "swiper";
 import'swiper/css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 const Portfolio = () =>{
     return(
         <div>
@@ -13,25 +15,26 @@ const Portfolio = () =>{
                         <li className='px-2'><a href="#contact">연락처들</a></li>
                     </ul>
                     <ul id="sns" className="d-flex">
-                        <li className='px-3'><a href="">깃</a></li>
-                        <li className='px-3'><a href="">노션</a></li>
+                        <li className='px-3'><a href="https://github.com/ga8226"><i class="bi bi-github"></i></a></li>
+                        <li className='px-3'><a href="https://www.notion.so/5-1-css-font-de1802128a6b42568fdbc59f809b7923?pvs=12">노션</a></li>
                     </ul>
                 </div>
 
              </header>
              <div id="slider" className="vh-100">
              <Swiper
-
+            autoplay={1500}
+            navigation={true}
             spaceBetween={0}
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-             >
-              <SwiperSlide><div className="vh-100 bg-dark">1</div></SwiperSlide>
-              <SwiperSlide><div className="vh-100 bg-warning">2</div></SwiperSlide>
-              <SwiperSlide><div className="vh-100 bg-info">3</div></SwiperSlide>
-              <SwiperSlide><div className="vh-100 bg-dark">4</div></SwiperSlide>
-             </Swiper>
+            onSwiper={(swiper) => console.log(swiper)} >
+            <SwiperSlide><div className="vh-100 bg-dark">1</div></SwiperSlide>
+            <SwiperSlide><div className="vh-100 bg-warning">2</div></SwiperSlide>
+            <SwiperSlide><div className="vh-100 bg-info">3</div></SwiperSlide>
+            <SwiperSlide><div className="vh-100 bg-dark">4</div></SwiperSlide>
+            </Swiper>
+    
              </div>
              <div id="about"  className="vh-100 bg-light"></div>
              <div id="review" className="vh-100">
