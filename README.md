@@ -1,2 +1,3 @@
 bootstrap @ 5.3.0
 scss @ 1.63.6
+swiper @ 9.4.1
