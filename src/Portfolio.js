@@ -23,12 +23,17 @@ const Portfolio = () =>{
              </header>
              <div id="slider" className="vh-100">
              <Swiper
-            autoplay={1500}
-            navigation={true}
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)} >
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+             >
             <SwiperSlide><div className="vh-100 bg-1"style={{backgroundImage :"url(img/img1.jpg)"}}></div></SwiperSlide>
             <SwiperSlide><div className="vh-100 bg-2"style={{backgroundImage :"url(img/img2.jpg)"}}></div></SwiperSlide>
             <SwiperSlide><div className="vh-100 bg-3"style={{backgroundImage:"url(img/img3.jpg)"}}></div></SwiperSlide>
@@ -36,7 +41,14 @@ const Portfolio = () =>{
             </Swiper>
     
              </div>
-             <div id="about"  className="vh-100 bg-light"></div>
+             <div id="about"  className="vh-100 bg-light">
+                <div className='row' id='abp'>
+                    <div className='col-6'>1</div>
+                    <div className='col-6'>2</div>
+                    <div className='col-6'>3</div>
+                    <div className='col-6'>4</div>
+                </div>
+             </div>
              <div id="review" className="vh-100">
                 <div className="container">
                     <div className='row'>
@@ -50,12 +62,8 @@ const Portfolio = () =>{
              <div id="contact"  className="vh-100 bg-light"></div>
              <div>
                 <footer id='ft'>
-                    <div className='container'>
-                        <ul className='d-flex justify-content-between'>
-                            <li><i></i></li>
-                            <li><i class="bi bi-phone-vibrate">010-1998-0212</i></li>
-                        </ul>
-
+                    <div className='container text-center'>
+                      <p><i class="bi bi-phone-vibrate">010-1998-0212</i></p>
                     </div>
                 </footer>
              </div>
